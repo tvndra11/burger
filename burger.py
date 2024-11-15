@@ -1,7 +1,10 @@
 import threading
 import random
 import functionsforburger
-t1 = threading.Thread(target=functionsforburger.customerline,time = 1)
+money = 0
+customers = 0
+timestring = threading.Thread(target=functionsforburger.customerline,time = 1)
+timestring.start
 foodlist = ['burger','fries','hotdog','cheeseburger','chicken','soda','slice of ham','pasta','smoothie','crisps']
 print('intro here')
 
