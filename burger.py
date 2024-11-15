@@ -1,12 +1,13 @@
 import threading
 import random
 import functionsforburger
+t1 = threading.Thread(target=functionsforburger.customerline,time = 1)
 foodlist = ['burger','fries','hotdog','cheeseburger','chicken','soda','slice of ham','pasta','smoothie','crisps']
 print('intro here')
 
 while money < 1000000: 
     while customers > 0:
-        
+
         food = foodlist[random.randint(0,9)]
         print(food,'please')
         answer = ""
